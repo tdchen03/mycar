@@ -576,10 +576,10 @@ THROTTLE_REVERSE_PWM = 405      #pwm value for max reverse throttle
 # SEQUENCE_LENGTH = 3             #some models use a number of images over time. This controls how many.
 # 
 # #IMU
-# HAVE_IMU = False                #when true, this add a Mpu6050 part and records the data. Can be used with a
-# IMU_SENSOR = 'mpu6050'          # (mpu6050|mpu9250)
-# IMU_ADDRESS = 0x68              # if AD0 pin is pulled high them address is 0x69, otherwise it is 0x68
-# IMU_DLP_CONFIG = 0              # Digital Lowpass Filter setting (0:250Hz, 1:184Hz, 2:92Hz, 3:41Hz, 4:20Hz, 5:10Hz, 6:5Hz)
+HAVE_IMU = True                #when true, this add a Mpu6050 part and records the data. Can be used with a
+IMU_SENSOR = 'mpu6050'          # (mpu6050|mpu9250)
+IMU_ADDRESS = 0x68              # if AD0 pin is pulled high them address is 0x69, otherwise it is 0x68
+IMU_DLP_CONFIG = 3              # Digital Lowpass Filter setting (0:250Hz, 1:184Hz, 2:92Hz, 3:41Hz, 4:20Hz, 5:10Hz, 6:5Hz)
 # 
 # #SOMBRERO
 # HAVE_SOMBRERO = False           #set to true when using the sombrero hat from the Donkeycar store. This will enable pwm on the hat.
